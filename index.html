@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <div class="app__videos">
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="./videos/video1.mp4"></video>
+        
+        <!-- sidebar -->
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//rjzlnunf.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//udwhdpod.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <h3>Topic 1</h3>
+            <p class="videoFooter__description">Source: <a href="https://www.youtube.com">YouTube</a></p>
+
+            <div class="videoFooter__ticker">
+              <span class="material-icons videoFooter__icon"> info </span>
+              <marquee>fountain, river, flower, autumn</marquee>
+            </div>
+          </div>
+          <a href="./images.html">
+            <lord-icon
+                src="https://cdn.lordicon.com//vixtkkbk.json"
+                trigger="hover"
+                alt=""
+                class="videoFooter__record"
+                colors="primary:#121331,secondary:#08a88a"
+                style="width:60px;height:60px">
+            </lord-icon>
+        </a>
+        </div>
+      </div>
+      <!-- video ends -->
+
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="./videos/video2.mp4"></video>
+
+        <!-- sidebar -->
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//rjzlnunf.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//udwhdpod.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <h3>Topic 2</h3>
+            <p class="videoFooter__description">Source: <a href="https://www.youtube.com">Facebook</a></p>
+
+            <div class="videoFooter__ticker">
+              <span class="material-icons videoFooter__icon"> info </span>
+              <marquee>fountain, river, flower, autumn</marquee>
+            </div>
+          </div>
+          <a href="./images.html">
+            <lord-icon
+                src="https://cdn.lordicon.com//vixtkkbk.json"
+                trigger="hover"
+                alt=""
+                class="videoFooter__record"
+                colors="primary:#121331,secondary:#08a88a"
+                style="width:60px;height:60px">
+            </lord-icon>
+        </a>
+        </div>
+      </div>
+      <!-- video ends -->
+
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="./videos/video3.mp4"></video>
+
+        <!-- sidebar -->
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//rjzlnunf.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+
+          <div class="videoSidebar__button">
+            <lord-icon
+              src="https://cdn.lordicon.com//udwhdpod.json"
+              trigger="loop"
+              colors="primary:#121331,secondary:#08a88a"
+              style="width:50px;height:50px">
+          </lord-icon>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <h3>Topic 2</h3>
+            <p class="videoFooter__description">Source: <a href="https://www.youtube.com">Facebook</a></p>
+
+            <div class="videoFooter__ticker">
+              <span class="material-icons videoFooter__icon"> info </span>
+              <marquee>fountain, river, flower, autumn</marquee>
+            </div>
+          </div>
+          <a href="./images.html">
+            <lord-icon
+                src="https://cdn.lordicon.com//vixtkkbk.json"
+                trigger="hover"
+                alt=""
+                class="videoFooter__record"
+                colors="primary:#121331,secondary:#08a88a"
+                style="width:60px;height:60px">
+            </lord-icon>
+        </a>
+        </div>
+      </div>
+      <!-- video ends -->
+    </div>
+
+    <script>
+      const videos = document.querySelectorAll('video');
+
+      for (const video of videos) {
+        video.addEventListener('click', function () {
+          console.log('clicked');
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
